@@ -1,8 +1,10 @@
-const getHealthyAdvices = (req, res) => {
+import type { RequestHandler } from 'express';
+
+const getHealthyAdvices: RequestHandler = (_req, res) => {
   const data = [
     {
       id: 1,
-      name: "Anna",
+      name: 'Anna',
       rating: 4.9,
     },
   ];
